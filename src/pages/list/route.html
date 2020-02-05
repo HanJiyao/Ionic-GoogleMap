@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Calculate disance</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label >
+        Start
+        </ion-label>
+        <ion-select [(ngModel)]="startPT">
+            <ion-option *ngFor="let park of parksArray" >{{park}}</ion-option> -->
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>
+        End
+        </ion-label>
+        <ion-select [(ngModel)]="endPT">
+            <ion-option *ngFor="let park of parksArray" >{{park}}</ion-option> -->
+        </ion-select>
+    </ion-item>
+    <ion-buttons end >
+        <button ion-button secondary (click)="displayRoute()">Route</button>
+          <button ion-button secondary (click)="clearMarkers()">Clear Markers</button>
+        </ion-buttons>
+        <div>Total distance: <span id="total"></span></div>
+  <div #map id="map"></div>
+ </ion-content>

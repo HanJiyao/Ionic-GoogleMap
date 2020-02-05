@@ -3,31 +3,39 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { MapPage } from '../pages/home/home';
+import { RoutePage } from '../pages/list/route';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
+import { ParkService } from '../providers/parkservice';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    MapPage,
+    RoutePage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    MapPage,
+    RoutePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    ParkService,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

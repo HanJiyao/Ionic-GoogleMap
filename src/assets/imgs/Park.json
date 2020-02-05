@@ -1,0 +1,49 @@
+[ {
+    "school" : "NYP",
+    "desc" : "Nanyang Polytechnic",
+     "ordering":"1",
+    "ownMarker":"assets/imgs/1.png",
+    "lat" : 1.37995,
+    "long" : 103.8489487
+},
+{
+    "school" : "BA",
+    "desc" : "Bishan Active Park",
+"ordering":"2",
+    "ownMarker":"assets/imgs/2.png",          
+"lat" : 1.3634088, 
+    "long" : 103.8435614
+},
+{
+    "school" : "BP",
+    "desc" : "Bishan Park",
+"ordering":"3",
+    "ownMarker":"assets/imgs/3.png",          
+"lat" : 1.3634088,
+    "long" : 103.8435614
+},
+{
+    "school" : "MP",
+    "desc" : "Macritchie Reservior Park",
+     "ordering":"4",
+    "ownMarker":"assets/imgs/4.png",
+    "lat" : 1.337840,
+    "long" : 103.916040
+},
+{
+    "school" : "BT",
+    "desc" : "Bukit Timah Nature Reserve",
+     "ordering":"5",
+    "ownMarker":"assets/imgs/5.png",
+    "lat" : 1.3540562,
+    "long" : 103.7769454
+},
+{
+    "school" : "AB",
+    "desc" : "Ang Mo Kio Bishan Park",
+     "ordering":"6",
+    "ownMarker":"assets/imgs/6.png",
+    "lat" : 1.363312, 
+    "long" : 103.843336
+}
+]
